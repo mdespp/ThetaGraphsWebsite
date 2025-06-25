@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #d8f0ff;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    background: white;
+    border: 4px dashed #aad7f0;
+    border-radius: 30px;
+    padding: 2rem 3rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+  
+  .math-input-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .math {
+    font-size: 1.5rem;
+    margin: 0 0.3rem;
+  }
+  
+  input[type="text"]#thetaInput {
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    min-width: 200px;
+  }
+  
+  .latex-preview {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #333;
+    min-height: 1.5rem;
+  }
+  
+  .check-row {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  
+  input[type="number"] {
+    padding: 0.4rem 0.1rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  button {
+    background: #5bb2e5;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #3498db;
+  }
+  
+  .note {
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 0.4rem;
+  }
+  
+  .result {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .scroll-output {
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fffefc;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 1rem;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .resolver-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .resolver-input {
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 60%;
+  }
+  
+  .resolver-button {
+    padding: 8px 16px;
+    background-color: #5bb2e5;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .vector-button {
+    padding: 8px 16px;
+    background-color: #ffa07a;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .draw-graph-button {
+    padding: 8px 16px;
+    background-color: #b2e55b;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  
+  
+  

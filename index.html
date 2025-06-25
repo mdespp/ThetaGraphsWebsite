@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Theta Graph</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Theta Graph</h1>
+
+    <div class="math-input-line">
+      <span class="math">\( G = \Theta( \)</span>
+      <input id="thetaInput" type="text" placeholder="e.g. 3^2, 4, 5" oninput="updateLatexPreview()" />
+      <span class="math">\( ) \)</span>
+    </div>
+
+    <div id="latexPreview" class="latex-preview"></div>
+
+    <div class="check-row">
+      <label for="guessInput">Check if there exists a resolving set of size:</label>
+      <input id="guessInput" type="number" placeholder="?" />
+      <button onclick="checkMetric()">Check</button>
+    </div>
+
+    <p class="note">This quickly becomes expensive the longer and  more paths given</p>
+    
+    <div id="output" class="result"></div>
+    <div class="check-all">
+        <label for="allSizeInput">Find all resolving sets of size:</label>
+        <input id="allSizeInput" type="number" placeholder="?" />
+        <button onclick="findAllResolvingSets()">Find All</button>
+      </div>
+      <p class="note">Calculates all of them but renders only the first 500</p>
+
+      <div id="allOutput" class="scroll-output"></div>
+      
+      <div class="section">
+        <h3>Check a Resolving Set</h3>
+        <div class="resolver-container">
+          <input
+            id="testSetInput"
+            type="text"
+            class="resolver-input"
+            placeholder="e.g. c_1, v_{1,2}, c_2"
+          />
+          <button onclick="checkIfResolves()" class="resolver-button">
+            Check Resolving Set
+          </button>
+          <button onclick="showDistanceVectors()" class="vector-button">
+            Show Distance Vectors
+          </button>
+        </div>
+        <div id="testOutput" style="margin-top: 10px; font-weight: bold;"></div>
+      </div>
+      <button
+  onclick="drawGraphFromInput()"
+  class="draw-graph-button"
+>
+  Draw Graph
+</button>
+
+      
+  </div>
+
+
+  <script type="module" src="existsResolvingSet.js"></script>
+  <script type="module" src="allResolvingSets.js"></script>
+  <script type="module" src="./drawGraph.js"></script>
+  <script type="module" src="checkIfResolves.js"></script>
+
+
+</body>
+</html>
